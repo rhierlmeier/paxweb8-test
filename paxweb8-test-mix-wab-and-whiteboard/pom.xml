@@ -28,7 +28,7 @@
     </parent>
 
 
-    <artifactId>paxweb8-test-servlet-src</artifactId>
+    <artifactId>paxweb8-test-mix-wab-and-whiteboard</artifactId>
     <name>paxweb8-test :: Mix Wab and Http Whiteboard</name>
 	<description>Sample for mixing WAB and http whiteboard</description>
     <packaging>bundle</packaging>
