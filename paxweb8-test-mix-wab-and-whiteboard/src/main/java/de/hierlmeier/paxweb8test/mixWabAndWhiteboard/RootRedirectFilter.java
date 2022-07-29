@@ -27,6 +27,7 @@ public class RootRedirectFilter implements Filter {
             HttpServletRequest httpRequest = (HttpServletRequest) servletRequest;
             m_Logger.info("doFilter " + httpRequest.getRequestURI());
             if("/".equals(httpRequest.getRequestURI())) {
+                m_Logger.info("Redirecting to WAB");
                 HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
                 httpServletResponse.sendRedirect("/wab");
                 return;

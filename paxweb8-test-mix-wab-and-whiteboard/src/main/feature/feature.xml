@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<features name="${project.artifactId}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
+<features name="${project.artifactId}">
 
     <feature name="${project.artifactId}" version="${project.version}">
+        <feature>scr</feature>
         <feature>pax-web-http-whiteboard</feature>
-
+        <feature>pax-web-http-war</feature>
         <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
 
     </feature>
