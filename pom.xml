@@ -77,6 +77,34 @@
                 <artifactId>osgi.annotation</artifactId>
                 <version>${osgi.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient-osgi</artifactId>
+                <version>4.5.13</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore-osgi</artifactId>
+                <version>4.4.15</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.ops4j.pax.web</groupId>
+                <artifactId>pax-web-features</artifactId>
+                <type>xml</type>
+                <classifier>features</classifier>
+                <version>${pax.web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.1</version>
+            </dependency>
+
+
         </dependencies>
 
     </dependencyManagement>
@@ -84,6 +112,7 @@
 
     <modules>
         <module>paxweb8-test-mix-wab-and-whiteboard</module>
+		<module>paxweb8-itest</module>
     </modules>
 
 </project>
